@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration form</title>
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="#" class="form" method="post">
+            <div class="input-box">
+                <label for="text">Full Name</label>
+                <input type="text" placeholder="Enter full name" id="text" required />
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Enter email address" id="email" />
+            </div>
+
+            <div class="input-box">
+                <label for="password">Enter password</label>
+                <input type="password" placeholder="Enter password" required id="password" />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                        placeholder="Enter phone number" />
+                </div>
+
+                <div class="input-box">
+                    <label for="date">Birth Date</label>
+                    <input type="date" placeholder="Enter birth date" required id="date" />
+                </div>
+            </div>
+
+            <div class="input-box ">
+                <label for="file">Upload picture</label>
+                <input type="file" required id="file" />
+            </div>
+
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" />
+                        <label for="check-male">male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" />
+                        <label for="check-other">prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box ">
+                <label for="bio">Provide a bio</label>
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."
+                    minlength="100" maxlength="1000"></textarea>
+            </div>
+
+            <div class="input-box address">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter street address" required id="address" />
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Country</option>
+                            <option>Nigeria</option>
+                            <option>Canada</option>
+                            <option>Germany</option>
+                            <option>Rwanda</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Enter your city" required />
+                </div>
+
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required />
+                <label for="terms-and-conditions">I agree to the <a href="www.google.com">terms and
+                        conditions</a></label>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
