@@ -142,7 +142,10 @@ nav ul li a {
 .home-data .gif {
     position: absolute;
     top: 110%;
-    left: 40%;
+    left: 30%;
 
+}
+.button{
+    display: block;
 }
 }
